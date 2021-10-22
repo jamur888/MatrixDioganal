@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.Scanner;
-
 public class Arrays {
 
     public int[] SumDiog(int [][]arrays ) {
