@@ -3,32 +3,9 @@ package com.company;
 import java.util.Scanner;
 
 public class Arrays {
-    public void run() {
 
-
-        int[][] arrays;
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите размер матрицы:");
-        int Count = scanner.nextInt();
-
-        arrays = new int[Count][Count];
-
-        for (int i = 0; i < Count; i++) {
-            for (int j = 0; j < Count; j++) {
-                System.out.println("Введите элемент матрицы [" + (i + 1) + ", " + (j + 1) + "]:");
-                arrays[i][j] = scanner.nextInt();
-
-            }
-
-        }
-        for (int i = 0; i < Count; i++) {
-            for (int j = 0; j < Count; j++) {
-
-                System.out.print(arrays[i][j] + " ");
-            }
-            System.out.println(" ");
-        }
+    public int[] SumDiog(int [][]arrays ) {
+        int Count = arrays.length;
         boolean canGo = true;
         int i = Count - 1;
         int startI = i;
@@ -58,10 +35,8 @@ public class Arrays {
             }
 
         }
-        for (int g = 0; g < result.length; g++) {
-            System.out.println(result[g]);
-        }
-
+        return result;
     }
+
 
 }
